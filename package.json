@@ -1,5 +1,5 @@
 {
-  "name": "basic-rest-api",
+  "name": "crud-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "webpack"
   },
   "publishConfig": {
-    "registry": "http://192.168.100.242:8081/repository/test/"
+    "registry": "http://192.168.100.242:8081/repository/crud-express/"
   },
   "files": [
     "build"
