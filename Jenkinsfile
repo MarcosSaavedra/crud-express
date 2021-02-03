@@ -15,11 +15,11 @@ pipeline {
             }
         }
         
-        // stage('Publish') {
-        //     steps {
-        //         echo 'Publish with npm'
-        //         sh 'npm publish'
-        //     }
-        // }
+        stage('Publish') {
+            steps {
+                echo 'Publish with npm'
+                sh 'npm publish'
+            }
+        }
     }
 }
