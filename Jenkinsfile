@@ -42,6 +42,6 @@ pipeline {
             //     if [ `cat $RESULT_CODE` | grep "HTTP/2 200" ]; then echo "PASSED!"; else exit 1; fi
             //   '''
        //   }
-        }
+        //}
     }
 }
