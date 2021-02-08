@@ -29,9 +29,9 @@ pipeline {
         }
 
        
-            stage ('Ansible') {
-          node('Ubuntu') {
-              echo 'This will be the ansible stage'
+        //     stage ('Ansible') {
+        //   node('Ubuntu') {
+        //       echo 'This will be the ansible stage'
             //  sh 'git clone https://github.com/MarcosSaavedra/config-Ansible.git'
             //  sh 'ansible-playbook -i configuration-management/hosts configuration-management/playbook.yaml'
             //  sh 'npm install my-package'
@@ -41,7 +41,7 @@ pipeline {
             //     RESULT_CODE=`curl -I http://localhost/.../..`
             //     if [ `cat $RESULT_CODE` | grep "HTTP/2 200" ]; then echo "PASSED!"; else exit 1; fi
             //   '''
-          }
+       //   }
         }
     }
 }
