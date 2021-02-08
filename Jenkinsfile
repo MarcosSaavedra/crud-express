@@ -14,6 +14,12 @@ pipeline {
                 sh 'npm run build'
             }
         }
+         stage('Test') {
+            steps {
+                echo 'This will be the test stage'
+                sh 'npm run test'
+            }
+        }
         
         stage('Publish') {
             steps {
@@ -22,14 +28,10 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'This will be the test stage'
-               // sh 'npm publish'
-            }
-        }
+       
             stage ('Ansible') {
           node('Ubuntu') {
+              echo 'This will be the ansible stage'
             //  sh 'git clone https://github.com/MarcosSaavedra/config-Ansible.git'
             //  sh 'ansible-playbook -i configuration-management/hosts configuration-management/playbook.yaml'
             //  sh 'npm install my-package'
